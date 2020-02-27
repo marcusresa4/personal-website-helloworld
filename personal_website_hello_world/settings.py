@@ -57,7 +57,8 @@ ROOT_URLCONF = 'personal_website_hello_world.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        # We need to tell Django that we created the base.html file in a new directory called 'templates'.
+        'DIRS': ['personal_website_hello_world/templates/'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
